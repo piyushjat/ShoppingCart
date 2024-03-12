@@ -15,7 +15,7 @@ export default function CartItem({item}) {
   return (
    
       
-      <div className='flex justify-between items-center border-b-2 border-gray-800 rounded-sm space-y-8 shadow-xl gap-3  mt-5 ml-5'>
+      <div className='flex justify-between text-xl items-center border-b-2 border-gray-800 rounded-sm space-y-8 shadow-xl gap-3  mt-5 ml-5'>
 
         <div className='h-[150px] '>
             <img src={item.image} className='h-full w-full '/>

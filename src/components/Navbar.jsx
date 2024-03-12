@@ -7,16 +7,16 @@ export default function Navbar() {
     const cart = useSelector((state) => state.cart);
   return (
     
-      <div className='flex justify-between items-center h-20 max-w-6xl max-auto'>
+      <div className='flex justify-between items-center h-20 max-w-7xl mx-auto w-11/12'>
 
         <NavLink to="/">
-        <div className='ml-60 text-slate-100'>
+        <div className=' text-slate-100 text-2xl'>
         <p>Shopping Palace</p>
         </div>
         </NavLink>
         
       
-      <div className='flex items-center font-medium text-slate-100 mr-5 space-x-6'>
+      <div className='flex items-center font-md text-2xl text-slate-100 mr-5 space-x-6'>
         <NavLink to="/"><p>Home</p></NavLink>
 
         <NavLink to="/cart">

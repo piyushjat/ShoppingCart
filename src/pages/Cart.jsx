@@ -14,7 +14,7 @@ export default function Cart() {
         setTotalAmount(cart.reduce( (acc,curr) => acc + curr.price,0) );
     },[cart])
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-between items-center gap-x-10 text-xl font-lg'>
       {
         cart.length > 0 ?
         (
@@ -41,7 +41,7 @@ export default function Cart() {
                     </div>
                 </div>
             </div>):
-            (<div className='flex flex-col items-center justify-center h-full mt-60'>
+            (<div className='flex flex-col items-center justify-center h-full mt-60 w-full gap-y-4'>
                 <p className='text-gray-700 font-semibold text-xl text-center'>Your cart is empty!</p>
                 <Link to="/">
                     <button className='bg-green-600 rounded-lg p-2 px-4 items-center'>Shop Now</button>
